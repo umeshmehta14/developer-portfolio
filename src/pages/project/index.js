@@ -9,7 +9,7 @@ import { SingleProject } from '../../components';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { headerData } from '../../data/headerData';
 import { projectsData } from '../../data/projectsData';
-import './ProjectPage.css';
+import './projectPage.css';
 
 function ProjectPage() {
 
