@@ -88,13 +88,13 @@ yarn install
 ### Start the development server
 
 ```
-npm start
+npm run dev
 ```
 
 #### or
 
 ```
-yarn start
+yarn dev
 ```
 
 ---
