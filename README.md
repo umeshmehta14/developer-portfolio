@@ -363,7 +363,6 @@ export const educationData = [
 |      react-reveal      |
 |    react-router-dom    |
 | react-router-hash-link |
-|      react-slick       |
 |     slick-carousel     |
 |       validator        |
 

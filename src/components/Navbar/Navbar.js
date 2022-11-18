@@ -1,6 +1,6 @@
 import Drawer from '@material-ui/core/Drawer';
-import CloseIcon from '@material-ui/icons/Close';
 import React, { useContext, useState } from 'react';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import { FaFolderOpen, FaUser } from 'react-icons/fa';
 import { HiDocumentText } from 'react-icons/hi';
@@ -24,31 +24,6 @@ function Navbar() {
         setOpen(false);
         setHandleDrawer();
     };
-
-    // const useStyles = makeStyles((t) => ({
-
-    //     // "px-[1.8em] w-[12em] sm:w-[14em] text-2xl bg-[#15202B] overflow-hidden border-t-[40px] border-b-[40px]"
-
-    //     MuiDrawer: {
-    //         padding: '0em 1.8em',
-    //         width: '14em',
-    //         fontFamily: ' var(--primaryFont)',
-    //         fontStyle: ' normal',
-    //         fontWeight: ' normal',
-    //         fontSize: ' 24px',
-    //         background: theme.secondary,
-    //         overflow: 'hidden',
-    //         borderTopRightRadius: '40px',
-    //         borderBottomRightRadius: '40px',
-    //         [t.breakpoints.down('sm')]: {
-    //             width: '12em',
-    //         },
-    //     },
-
-    // }));
-
-
-
 
     const shortname = (name) => {
         if (name.length > 12) {
@@ -83,10 +58,11 @@ function Navbar() {
                 anchor='left'
                 open={open}
                 className={styles.drawer}
+                classes={{ paper: "p-[1.8em] w-[12em] sm:w-[14em] text-2xl bg-[#15202B] overflow-hidden rounded-t-[40px] rounded-b-[40px] " }}
                 disableScrollLock={true}
             >
-                <div className={styles.divClosebtn}>
-                    <CloseIcon
+                <div className="text-3xl font-bold cursor-pointer text-[#1D9BF0] absolute sm:right-[40] sm:top-[40] right-[20] top-[20] transition-colors hover:text-[#EFF3F4] ">
+                    <AiOutlineCloseCircle
                         onClick={handleDrawerClose}
                         onKeyDown={(e) => {
                             if (e.key === ' ' || e.key === 'Enter') {
@@ -94,7 +70,7 @@ function Navbar() {
                                 handleDrawerClose();
                             }
                         }}
-                        className="text-2xl font-bold cursor-pointer text-[#1D9BF0] absolute sm:right-[40] sm:top-[40] right-[20] top-[20] transition-colors hover:text-[#EFF3F4] "
+                        className="text-3xl font-bold cursor-pointer text-[#1D9BF0] absolute sm:right-[40] sm:top-[40] right-[20] top-[20] transition-colors hover:text-[#EFF3F4] "
                         role='button'
                         tabIndex='0'
                         aria-label='Close'

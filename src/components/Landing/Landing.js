@@ -13,11 +13,6 @@ import Link from '../link';
 function Landing() {
     const { theme, drawerOpen } = useContext(ThemeContext);
 
-    console.log(theme)
-
-
-
-
     return (
         <div className={styles.landing} style={{
             backgroundColor: theme.quaternary
