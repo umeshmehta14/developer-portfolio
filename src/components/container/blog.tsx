@@ -1,10 +1,11 @@
 import { makeStyles } from "@mui/styles";
 import React, { useContext } from "react";
 import { ThemeContext } from "../../contexts/theme-context";
+import { ContextValuesTypes } from "../../types";
 import BlogUI from "../core-ui/blog/blog-ui";
 
 function Blog() {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext<ContextValuesTypes>(ThemeContext);
 
   const useStyles = makeStyles(() => ({
     viewAllBtn: {

@@ -18,7 +18,7 @@
   margin-top: 1rem;
 }
 
-.navbar--container > h1 {
+.navbar--container>h1 {
   font-family: "BestermindRegular";
   color: var(--primary-2);
   font-size: 2.5rem;
@@ -29,12 +29,12 @@
   margin-top: 5rem;
 }
 
-.drawer > .MuiBackdrop-root {
+.drawer>.MuiBackdrop-root {
   background: rgba(33, 33, 33, 0.15) !important;
   backdrop-filter: blur(20px) !important;
 }
 
-.drawer > .MuiDrawer-paper {
+.drawer>.MuiDrawer-paper {
   background-color: #15202b !important;
 }
 
@@ -42,9 +42,11 @@
   .navbar--container {
     padding: 0 2rem;
   }
-  .navbar--container > h1 {
+
+  .navbar--container>h1 {
     font-size: 2.2rem;
   }
+
   .nav-menu {
     font-size: 2.2rem;
     margin-top: -1.5rem;
@@ -61,12 +63,15 @@
   .nav-menu {
     color: var(--primary-2);
   }
-  .navbar--container > h1 {
+
+  .navbar--container>h1 {
     font-size: 2rem;
   }
+
   .nav-menu:hover {
     color: var(--primary-2);
   }
+
   .MuiDrawer-paper {
     border-radius: 0 !important;
   }
@@ -76,11 +81,13 @@
   .navbar {
     height: 5rem;
   }
+
   .navbar--container {
     padding: 0 1rem;
     margin-top: 0rem;
   }
-  .navbar--container > h1 {
+
+  .navbar--container>h1 {
     font-size: 1.5rem;
   }
 }

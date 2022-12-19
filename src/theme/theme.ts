@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { ThemeDataType } from "../types";
+import { ThemeDataType } from "../types/data-type";
 import { contactsGreen } from "./images";
 
 export const theLightTheme: ThemeDataType = {

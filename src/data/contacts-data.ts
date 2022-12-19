@@ -1,4 +1,4 @@
-import { ContactsData } from "../types";
+import { ContactsData } from "../types/data-type";
 
 export const contactsData: ContactsData = {
   email: "abusaid7388@gmail.com",

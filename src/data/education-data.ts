@@ -1,4 +1,4 @@
-import { EducationData } from "../types";
+import { EducationData } from "../types/data-type";
 
 export const educationData: EducationData[] = [
   {

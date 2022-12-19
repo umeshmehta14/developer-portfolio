@@ -4,10 +4,11 @@ import React, { useContext, useState } from "react";
 import ProjectPageUI from "../../components/core-ui/project-page/project-page-ui";
 import { ThemeContext } from "../../contexts/theme-context";
 import { projectsData } from "../../data/projects-data";
+import { ContextValuesTypes } from "../../types";
 
 function ProjectPage() {
   const [search, setSearch] = useState("");
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext<ContextValuesTypes>(ThemeContext);
 
   const filteredProjects = projectsData.filter((project) => {
     const content = project.projectName + project.projectDesc + project.tags;

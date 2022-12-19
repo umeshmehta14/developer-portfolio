@@ -1,4 +1,4 @@
-import { HeaderDataType } from "../types";
+import { HeaderDataType } from "../types/data-type";
 
 export const headerData: HeaderDataType = {
   name: "ABU SAID",

@@ -4,17 +4,10 @@ import { Helmet } from "react-helmet";
 import { AiOutlineHome } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { headerData } from "../../../data/header-data";
-import { ProjectDataType, ThemeDataType } from "../../../types";
+import { ProjectDataType } from "../../../types/data-type";
+import { ProjectPageUIPops } from "../../../types/project";
 import ProjectCard from "../../container/project-card";
 import "./projectPage.css";
-
-export interface ProjectPageUIPops {
-  theme: ThemeDataType;
-  classes: any;
-  search: string;
-  setSearch: React.Dispatch<React.SetStateAction<string>>;
-  filteredProjects: ProjectDataType[];
-}
 
 const ProjectPageUI = ({
   theme,

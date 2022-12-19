@@ -3,13 +3,13 @@ import * as React from "react";
 import { useContext, useState } from "react";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import { ThemeContext } from "../../../contexts/theme-context";
-import { ThemeDataType } from "../../../types";
+import { ContextValuesTypes } from "../../../types";
 import "./back-to-top.css";
 
 function BackToTop() {
   const [visible, setVisible] = useState(false);
 
-  const { theme } = useContext<{ theme: ThemeDataType }>(ThemeContext);
+  const { theme } = useContext<ContextValuesTypes>(ThemeContext);
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;

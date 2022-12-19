@@ -1,4 +1,4 @@
-import { AboutDataType } from "../types";
+import { AboutDataType } from "../types/data-type";
 
 export const aboutData: AboutDataType = {
   title: "Who I am",

@@ -1,6 +1,6 @@
 import { makeStyles } from "@mui/styles";
 import React from "react";
-import { ProjectCardPops } from "../../types";
+import { ProjectCardPops } from "../../types/project";
 import ProjectCardUI from "../core-ui/project-card/project-card-ui";
 
 const ProjectCard = ({

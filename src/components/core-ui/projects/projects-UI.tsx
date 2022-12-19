@@ -2,14 +2,9 @@ import React from "react";
 import { HiArrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { projectsData } from "../../../data/projects-data";
-import { ThemeDataType } from "../../../types";
+import { ProjectUIPops } from "../../../types/project";
 import ProjectCard from "../../container/project-card";
 import "./projects.css";
-
-export interface ProjectUIPops {
-  theme: ThemeDataType;
-  classes: any;
-}
 
 function ProjectsUI({ theme, classes }: ProjectUIPops) {
   return (

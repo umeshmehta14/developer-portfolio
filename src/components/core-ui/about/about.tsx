@@ -3,12 +3,12 @@ import React, { useContext } from "react";
 import codings from "../../../assets/lottie/coding.json";
 import { ThemeContext } from "../../../contexts/theme-context";
 import { aboutData } from "../../../data/about-data";
-import { ThemeDataType } from "../../../types";
+import { ContextValuesTypes } from "../../../types";
 import AnimationLottie from "../../helper/animation-lottie";
 import "./about.css";
 
 function About() {
-  const { theme } = useContext<{ theme: ThemeDataType }>(ThemeContext);
+  const { theme } = useContext<ContextValuesTypes>(ThemeContext);
   return (
     <div style={{ backgroundColor: theme.secondary }}>
       <Container className='about' id='about'>

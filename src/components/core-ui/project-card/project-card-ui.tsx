@@ -1,21 +1,9 @@
 import React from "react";
 import { FaCode, FaPlay } from "react-icons/fa";
 import placeholder from "../../../assets/png/placeholder.png";
-import { ThemeDataType } from "../../../types";
+import { ProjectCardUIPops } from "../../../types/project";
 import "./project-card.css";
 const Fade = require("react-reveal/Fade");
-
-export interface ProjectCardUIPops {
-  id: number;
-  name: string;
-  desc: string;
-  tags: string[];
-  code: string;
-  demo: string;
-  image: any;
-  theme: ThemeDataType;
-  classes: any;
-}
 
 function ProjectCardUI({
   id,

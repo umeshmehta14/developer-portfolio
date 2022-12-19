@@ -3,13 +3,13 @@ import React, { useContext } from "react";
 import education from "../../../assets/lottie/education.json";
 import { ThemeContext } from "../../../contexts/theme-context";
 import { educationData } from "../../../data/education-data";
-import { ThemeDataType } from "../../../types";
+import { ContextValuesTypes } from "../../../types";
 import AnimationLottie from "../../helper/animation-lottie";
 import EducationCard from "./education-card";
 import "./education.css";
 
 function Education() {
-  const { theme } = useContext<{ theme: ThemeDataType }>(ThemeContext);
+  const { theme } = useContext<ContextValuesTypes>(ThemeContext);
   return (
     <div style={{ backgroundColor: theme.secondary }}>
       <Container className='education' id='resume'>

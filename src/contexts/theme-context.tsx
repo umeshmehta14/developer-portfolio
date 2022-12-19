@@ -1,20 +1,20 @@
 import * as React from "react";
 import { useState } from "react";
 import { theDarkTheme, theLightTheme } from "../theme/theme";
-import { ThemeDataType } from "../types";
+import { ContextValuesTypes } from "../types";
 
-interface ValuesTypes {
-  theme: ThemeDataType;
-  drawerOpen: boolean;
-  setHandleDrawer: () => void;
-  changeTheme: () => void;
-  isDark: boolean;
-}
+const defaultValue: ContextValuesTypes = {
+  theme: theDarkTheme,
+  drawerOpen: false,
+  setHandleDrawer: () => {},
+  changeTheme: () => {},
+  isDark: true,
+};
 
-export const ThemeContext = React.createContext<ValuesTypes | null>(null);
+export const ThemeContext =
+  React.createContext<ContextValuesTypes>(defaultValue);
 
 const ThemeContextProvider = ({ children }: { children: React.ReactNode }) => {
-  // eslint-disable-next-line
   const [theme, setTheme] = useState(theDarkTheme);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [isDark, setDark] = useState(true);
@@ -33,7 +33,7 @@ const ThemeContextProvider = ({ children }: { children: React.ReactNode }) => {
     }
   };
 
-  const value: ValuesTypes = {
+  const value: ContextValuesTypes = {
     theme,
     drawerOpen,
     setHandleDrawer,

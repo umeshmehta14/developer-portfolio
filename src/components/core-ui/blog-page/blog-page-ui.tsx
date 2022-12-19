@@ -4,7 +4,8 @@ import { Helmet } from "react-helmet";
 import { AiOutlineHome } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { headerData } from "../../../data/header-data";
-import { BlogDataType, BlogPageUIProps } from "../../../types";
+import { BlogPageUIProps } from "../../../types/blog";
+import { BlogDataType } from "../../../types/data-type";
 import BlogCard from "../blog/blog-card/blog-card";
 import "./blog.css";
 

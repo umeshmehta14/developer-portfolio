@@ -16,7 +16,7 @@ import { IoClose } from "react-icons/io5";
 import { ThemeContext } from "../../../contexts/theme-context";
 import { contactsData } from "../../../data/contacts-data";
 import { socialsData } from "../../../data/socialsData";
-import { ContactUIPops } from "../../../types";
+import { ContactUIPops, ContextValuesTypes } from "../../../types";
 import "./contacts.css";
 
 const ContactUI = ({
@@ -34,7 +34,7 @@ const ContactUI = ({
   message,
   setMessage,
 }: ContactUIPops) => {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext<ContextValuesTypes>(ThemeContext);
 
   return (
     <div

@@ -2,18 +2,12 @@ import { makeStyles } from "@mui/styles";
 import * as React from "react";
 import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 import { ThemeContext } from "../../../contexts/theme-context";
-import { ThemeDataType } from "../../../types";
+import { ContextValuesTypes } from "../../../types";
 import "./change-theme.css";
-
-interface ThemeContextType {
-  theme: ThemeDataType;
-  changeTheme: () => void;
-  isDark: boolean;
-}
 
 const ChangeTheme = () => {
   const { theme, changeTheme, isDark } =
-    React.useContext<ThemeContextType>(ThemeContext);
+    React.useContext<ContextValuesTypes>(ThemeContext);
 
   const useStyles = makeStyles(() => ({
     icon: {

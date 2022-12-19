@@ -4,9 +4,10 @@ import { HashLink as NavLink } from "react-router-hash-link";
 import Typed from "react-typed";
 import { headerData } from "../../../data/header-data";
 import { socialsData } from "../../../data/socialsData";
+import { LandingUIPops } from "../../../types";
 import "./landing.css";
 
-function LandingUI({ theme, drawerOpen, classes }: any) {
+function LandingUI({ theme, drawerOpen, classes }: LandingUIPops) {
   return (
     <div className='landing' style={{ backgroundColor: theme.quaternary }}>
       <div className='landing--container'>

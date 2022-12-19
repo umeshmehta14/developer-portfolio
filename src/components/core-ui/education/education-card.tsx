@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import eduImgBlack from "../../../assets/svg/education/eduImgBlack.svg";
 import eduImgWhite from "../../../assets/svg/education/eduImgWhite.svg";
 import { ThemeContext } from "../../../contexts/theme-context";
-import { EducationCardPops } from "../../../types";
+import { ContextValuesTypes, EducationCardPops } from "../../../types";
 import "./education.css";
 const Fade = require("react-reveal/Fade");
 
@@ -14,7 +14,7 @@ function EducationCard({
   startYear,
   endYear,
 }: EducationCardPops) {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext<ContextValuesTypes>(ThemeContext);
 
   const useStyles = makeStyles((t) => ({
     educationCard: {

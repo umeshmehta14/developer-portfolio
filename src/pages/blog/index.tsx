@@ -4,10 +4,11 @@ import React, { useContext, useState } from "react";
 import BlogPageUI from "../../components/core-ui/blog-page/blog-page-ui";
 import { ThemeContext } from "../../contexts/theme-context";
 import { blogData } from "../../data/blog-data";
+import { ContextValuesTypes } from "../../types";
 
 function BlogPage() {
   const [search, setSearch] = useState("");
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext<ContextValuesTypes>(ThemeContext);
 
   const filteredArticles = blogData.filter((blog) => {
     const content = blog.title + blog.description + blog.date;

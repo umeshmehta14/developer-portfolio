@@ -4,6 +4,7 @@ import * as React from "react";
 import { useContext, useRef, useState } from "react";
 import isEmail from "validator/lib/isEmail";
 import { ThemeContext } from "../../contexts/theme-context";
+import { ContextValuesTypes } from "../../types";
 import ContactUI from "../core-ui/contacts/contacts-ui";
 
 const Contacts = () => {
@@ -14,7 +15,7 @@ const Contacts = () => {
   const [success, setSuccess] = useState(false);
   const [errMsg, setErrMsg] = useState("");
   const form = useRef();
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext<ContextValuesTypes>(ThemeContext);
 
   const handleClose = (reason: string) => {
     if (reason === "clickaway") {
@@ -113,10 +114,10 @@ const Contacts = () => {
       if (isEmail(email)) {
         emailjs
           .sendForm(
-            process.env.REACT_APP_YOUR_SERVICE_ID,
-            process.env.REACT_APP_YOUR_TEMPLATE_ID,
-            form.current,
-            process.env.REACT_APP_YOUR_PUBLIC_KEY,
+            process.env.REACT_APP_YOUR_SERVICE_ID as string,
+            process.env.REACT_APP_YOUR_TEMPLATE_ID as string,
+            form?.current!,
+            process.env.REACT_APP_YOUR_PUBLIC_KEY as string,
           )
           .then(
             (result) => {

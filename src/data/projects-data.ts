@@ -6,7 +6,7 @@ import seven from "../assets/svg/projects/seven.svg";
 import six from "../assets/svg/projects/six.svg";
 import three from "../assets/svg/projects/three.svg";
 import two from "../assets/svg/projects/two.svg";
-import { ProjectDataType } from "../types";
+import { ProjectDataType } from "../types/data-type";
 
 export const projectsData: ProjectDataType[] = [
   {

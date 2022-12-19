@@ -3,16 +3,9 @@ import React, { useContext } from "react";
 import expImgBlack from "../../../assets/svg/experience/expImgBlack.svg";
 import expImgWhite from "../../../assets/svg/experience/expImgWhite.svg";
 import { ThemeContext } from "../../../contexts/theme-context";
+import { ContextValuesTypes, ExperienceCardPops } from "../../../types";
 import "./experience.css";
 const Fade = require("react-reveal/Fade");
-
-export interface ExperienceCardPops {
-  id: number;
-  company: string;
-  jobtitle: string;
-  startYear: string;
-  endYear: string;
-}
 
 function ExperienceCard({
   id,
@@ -21,7 +14,7 @@ function ExperienceCard({
   startYear,
   endYear,
 }: ExperienceCardPops) {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext<ContextValuesTypes>(ThemeContext);
 
   const useStyles = makeStyles((t) => ({
     experienceCard: {

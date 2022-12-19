@@ -1,4 +1,4 @@
-import { SocialsDataType } from "../types";
+import { SocialsDataType } from "../types/data-type";
 
 export const socialsData: SocialsDataType = {
   github: "https://github.com/said7388",

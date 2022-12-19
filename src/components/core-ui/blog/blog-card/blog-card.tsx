@@ -1,6 +1,6 @@
 import * as React from "react";
 import placeholder from "../../../../assets/png/placeholder.png";
-import { BlogCardPops } from "../../../../types";
+import { BlogCardPops } from "../../../../types/blog";
 import "./single-blog.css";
 const Fade = require("react-reveal/Fade");
 

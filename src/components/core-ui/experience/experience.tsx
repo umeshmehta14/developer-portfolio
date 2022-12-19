@@ -3,12 +3,13 @@ import React, { useContext } from "react";
 import experience from "../../../assets/lottie/development.json";
 import { ThemeContext } from "../../../contexts/theme-context";
 import { experienceData } from "../../../data/experience-data";
+import { ContextValuesTypes } from "../../../types";
 import AnimationLottie from "../../helper/animation-lottie";
 import ExperienceCard from "./experience-card";
 import "./experience.css";
 
 function Experience() {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext<ContextValuesTypes>(ThemeContext);
   return (
     <div style={{ backgroundColor: theme.secondary }}>
       <Container className='experience' id='experience'>

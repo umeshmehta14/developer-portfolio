@@ -2,11 +2,12 @@ import React, { useContext } from "react";
 import Marquee from "react-fast-marquee";
 import { ThemeContext } from "../../../contexts/theme-context";
 import { skillsData } from "../../../data/skillsData";
+import { ContextValuesTypes } from "../../../types";
 import { skillsImage } from "../../../utils/skills-image";
 import "./skills.css";
 
 function Skills() {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext<ContextValuesTypes>(ThemeContext);
 
   const skillBoxStyle = {
     backgroundColor: theme.secondary,

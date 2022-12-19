@@ -3,11 +3,12 @@ import { HiArrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../../../contexts/theme-context";
 import { blogData } from "../../../data/blog-data";
+import { ContextValuesTypes } from "../../../types";
 import BlogCard from "./blog-card/blog-card";
 import "./blog.css";
 
 const BlogUI = ({ classes }: any) => {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext<ContextValuesTypes>(ThemeContext);
 
   return (
     <>

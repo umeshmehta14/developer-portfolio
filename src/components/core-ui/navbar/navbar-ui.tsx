@@ -7,20 +7,9 @@ import { IoClose, IoHomeSharp, IoMenuSharp } from "react-icons/io5";
 import { MdPhone } from "react-icons/md";
 import { HashLink as NavLink } from "react-router-hash-link";
 import { headerData } from "../../../data/header-data";
-import { ThemeDataType } from "../../../types";
+import { NavbarUIPops } from "../../../types";
 import "./navbar.css";
 const Fade = require("react-reveal/Fade");
-
-export interface NavbarUIPops {
-  theme: ThemeDataType;
-  shortname: Function;
-  classes: any;
-  handleDrawerOpen: () => void;
-  handleDrawerClose: () => void;
-  open: boolean;
-  changeTheme: () => void;
-  isDark: boolean;
-}
 
 function NavbarUI({
   theme,

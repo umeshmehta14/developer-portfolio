@@ -2,10 +2,11 @@ import { makeStyles } from "@mui/styles";
 import * as React from "react";
 import { useContext } from "react";
 import { ThemeContext } from "../../contexts/theme-context";
+import { ContextValuesTypes } from "../../types";
 import ProjectsUI from "../core-ui/projects/projects-UI";
 
 const Projects = () => {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext<ContextValuesTypes>(ThemeContext);
 
   const useStyles = makeStyles(() => ({
     viewAllBtn: {
