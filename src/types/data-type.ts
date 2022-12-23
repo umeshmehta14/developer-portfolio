@@ -77,3 +77,10 @@ export interface ProjectDataType {
   demo: string;
   image: any;
 }
+
+export interface CertificateDataType {
+  id: string;
+  title: string;
+  image: any;
+  link: string;
+}
