@@ -3,6 +3,7 @@ export const skillsData = [
   "Figma",
   "Javascript",
   "CSS",
+  "Docker",
   "React",
   "Node JS",
   "Bootstrap",
