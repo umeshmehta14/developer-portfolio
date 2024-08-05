@@ -7,5 +7,5 @@ export const headerData = {
     "https://res.cloudinary.com/umeshcloud/image/upload/v1707547809/WhatsApp_Image_2024-02-10_at_12.16.16_PM_rag0nd.jpg",
   imagebw: "https://i.ibb.co/Cw2Xp90/abu-said-bw.jpg",
   resumePdf:
-    "https://drive.google.com/file/d/1aCOOcEtdhrX90cA0MlhnP6Zt5LCDi6lZ/view?usp=drive_link",
+    "https://drive.google.com/file/d/1eolH_BAvQ6RcBJEuf2fAK2Uv983n7-Tv/view?usp=drive_link",
 };

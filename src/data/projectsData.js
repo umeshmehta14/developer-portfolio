@@ -7,7 +7,7 @@ export const projectsData = [
     projectName: "TechBay",
     projectDesc:
       "About TechBay is an exciting e-commerce platform dedicated to showcasing the latest and greatest electronic items.",
-    tags: ["MERN Stack", "React", "Vanilla CSS"],
+    tags: ["MERN Stack", "React", "Context-api", "Vanilla CSS"],
     code: "https://github.com/umeshmehta14/TechBay--E-commerce-/tree/master",
     demo: "https://techbay-um14.netlify.app/",
     image: techbay_img,
@@ -17,7 +17,7 @@ export const projectsData = [
     projectName: "Instaverse",
     projectDesc:
       "Instaverse is the ultimate social media application, combining powerful features, stunning visuals, and a user-friendly interface to create a vibrant and engaging community.",
-    tags: ["React", "React-Router", "Chakra Ui"],
+    tags: ["MERN Stack", "React", "Redux-toolkit", "Chakra Ui"],
     code: "https://github.com/umeshmehta14/InstaVerse",
     demo: "https://instaverse-um14.netlify.app/",
     image: social_media,
